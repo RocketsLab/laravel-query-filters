@@ -1,0 +1,37 @@
+{
+    "name": "rocketslab/laravel-query-filters",
+    "description": "Query filter through a Pipeline",
+    "require": {
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jjsquady",
+            "email": "jorge@rocketslab.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RocketsLab\\LaravelQueryFilters\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RocketsLab\\LaravelQueryFilters\\QueryFiltersServiceProvider"
+            ],
+            "dont-discover": []
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
